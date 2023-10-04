@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --font-default:'Inter', sans-serif;
+    --text-color: #000000;
+    --main-color: #B81515;
+}
+
+.body {
+    font-family: var(--font-default);
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--text-color);
+}
+
+.conteiner img {
+    width: 2rem; 
+    max-width: 50px; 
+    height: auto; 
+}
+
+.conteiner h1 {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.conteiner li {
+    display: inline;
+    align-items: center;
+    margin-left: 40px;
+    width: 3rem;
+    height: 1.5rem;
+    
+
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+/* Banner 01 */
+
+.banner1-viajando {
+    width: 100%;
+}

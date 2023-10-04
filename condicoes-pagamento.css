@@ -1,0 +1,57 @@
+:root {
+    --font-default:'Inter', sans-serif;
+    --text-color: #000000;
+    --main-color: #B81515;
+}
+
+.condicoes-pagamento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 32px;
+    text-align: start;
+    border: solid 2px var(--main-color);
+}
+
+.condicoes-pagamento h1 {
+    display: flex;
+    margin: 0 auto;
+    font-size: 2.2rem; /* Reduzi um pouco o tamanho do título para um design mais equilibrado */
+    font-weight: 600;
+    margin-bottom: 20px; /* Adicionei um espaçamento inferior para separar o título das divs */
+    position: relative;
+    border: solid 2px var(--main-color);
+}
+
+.condicoes-pagamento h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.parcelamento {
+    border: solid 2px var(--main-color);
+}
+
+.parcelamento h2 {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.parcelamento p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 10px;
+    margin-top: 20px;
+}
+

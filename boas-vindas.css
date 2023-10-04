@@ -1,0 +1,44 @@
+:root {
+    --font-default:'Inter', sans-serif;
+    --text-color: #000000;
+    --main-color: #B81515;
+}
+
+.boas-vindas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 32px;
+}
+
+.boas-vindas h1 {
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+}
+
+.boas-vindas h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2%;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.boas-vindas-text {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+    margin-top: 24px;
+    width: 1200px;
+    max-width: 100%; 
+    font-size: 20px;
+    font-weight: 300;
+}

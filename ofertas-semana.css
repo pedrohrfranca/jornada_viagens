@@ -1,0 +1,113 @@
+:root {
+    --font-default:'Inter', sans-serif;
+    --text-color: #000000;
+    --main-color: #B81515;
+}
+
+.ofertas-semana {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 32px;
+}
+
+.ofertas-semana h1 {
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ofertas-semana h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2%;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.ofertas-semana-lugares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide em 2 colunas */
+    gap: 20px; 
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.ofertas-semana-lugares div {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.ofertas-semana-lugares img {
+    width: 90%;
+    min-width: 60%;
+    height: 250px;
+    max-height: 90%;
+    filter: brightness(0.5); 
+    border-radius: 10px;
+}
+
+
+.texto01 {
+    position: absolute;
+  top: 15%; /* Ajuste a posição vertical do texto conforme necessário */
+  left: 50%; /* Ajuste a posição horizontal do texto conforme necessário */
+  transform: translate(-50%, -50%); /* Centraliza o texto no meio da imagem */
+    color: white; 
+    padding: 10px; 
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+
+.ofertas-semana-lugares h1 {
+    position: absolute;
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    padding: 10px; 
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ofertas-semana-lugares p {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    padding: 10px; 
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ofertas-semana-lugares button {
+    position: absolute;
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+
+.ofertas-semana-lugares button:hover {
+    background-color: var(--text-color);
+    cursor: pointer;
+}
