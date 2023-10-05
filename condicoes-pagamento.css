@@ -14,6 +14,7 @@
     padding: 32px;
     text-align: start;
     border: solid 2px var(--main-color);
+    align-items: center;
 }
 
 .condicoes-pagamento h1 {
@@ -23,7 +24,6 @@
     font-weight: 600;
     margin-bottom: 20px; /* Adicionei um espaçamento inferior para separar o título das divs */
     position: relative;
-    border: solid 2px var(--main-color);
 }
 
 .condicoes-pagamento h1::after {
@@ -39,19 +39,44 @@
 }
 
 .parcelamento {
-    border: solid 2px var(--main-color);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 10px;
 }
 
 .parcelamento h2 {
-    padding: 10px;
     font-size: 2rem;
     font-weight: 600;
+    max-width: 100%;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .parcelamento p {
     font-size: 1rem;
     font-weight: 300;
-    padding: 10px;
-    margin-top: 20px;
+    max-width: 100%;
+    margin-right: 20px;
 }
+
+.parcelamento-imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas para as duas imagens */
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.parcelamento-imagens img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.parcelamento-imagens img:nth-child(3) {
+    grid-column: span 2; /* A terceira imagem ocupará as duas colunas */
+}
+
 
