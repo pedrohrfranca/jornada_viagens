@@ -13,16 +13,15 @@
     margin-bottom: 100px;
     padding: 32px;
     text-align: start;
-    border: solid 2px var(--main-color);
     align-items: center;
 }
 
 .condicoes-pagamento h1 {
     display: flex;
     margin: 0 auto;
-    font-size: 2.2rem; /* Reduzi um pouco o tamanho do título para um design mais equilibrado */
+    font-size: 2.2rem;
     font-weight: 600;
-    margin-bottom: 20px; /* Adicionei um espaçamento inferior para separar o título das divs */
+    margin-bottom: 20px;
     position: relative;
 }
 
